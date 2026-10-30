@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio | Mobile Game Studio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 1px solid #334155;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
+
+        header p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #f1f5f9;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .game-card {
+            background-color: #1e293b;
+            border-radius: 12px;
+            padding: 24px;
+            border: 1px solid #334155;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .game-title {
+            font-size: 1.5rem;
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .game-tags {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: #334155;
+            color: #38bdf8;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .game-desc {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #0284c7;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #0369a1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #64748b;
+            border-top: 1px solid #334155;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Indie Game Studio</h1>
+        <p>2D Mobil Oyunlar & Bağımsız Oyun Geliştirme</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Oyunlarımız</h2>
+        <div class="games-grid">
+            
+            <!-- Gladimeow Card -->
+            <div class="game-card">
+                <h3 class="game-title">Gladimeow</h3>
+                <div class="game-tags">
+                    <span class="tag">Pixel Art</span>
+                    <span class="tag">Fighting</span>
+                    <span class="tag">Godot</span>
+                </div>
+                <p class="game-desc">Retro pixel art grafiklere sahip, gladyatör kedilerin arenasındaki kıyasıya dövüş mücadelesi! Özel kombolar ve eğlenceli mekanikler seni bekliyor.</p>
+                <a href="#" class="btn">Google Play'de İncele</a>
+            </div>
+
+            <!-- Vice Map Card -->
+            <div class="game-card">
+                <h3 class="game-title">Vice Map</h3>
+                <div class="game-tags">
+                    <span class="tag">2D Arcade</span>
+                    <span class="tag">Action</span>
+                    <span class="tag">Flutter</span>
+                </div>
+                <p class="game-desc">Retro polis takibi ve uçak navigasyon mekaniklerine sahip aksiyon dolu 2D arcade oyunu. Polislerden kaçın, aranma seviyeni yönet ve en yüksek skora ulaş!</p>
+                <a href="#" class="btn">Google Play'de İncele</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Developer Studio. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
